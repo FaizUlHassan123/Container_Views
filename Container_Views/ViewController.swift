@@ -12,56 +12,48 @@ class ViewController: UIViewController {
     @IBOutlet weak var first_View:UIView!
     @IBOutlet weak var second_view:UIView!
 
-    //Add Tablview from other VIewcontroller
-    private lazy var FirstObject: SecondTableViewController = {
-        // Instantiate View Controller
-          let storyboard = UIStoryboard(name: "Main", bundle: nil)
-          let viewController = storyboard.instantiateViewController(withIdentifier: "SecondTableViewController") as! SecondTableViewController
-        return viewController
-      }()
+    let firstController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondTableViewController") as! SecondTableViewController
+
     // Adding it as Subview:
-     private func add(asChildViewController viewController: UIViewController){
+     private func add(){
+
         // Configure Child View
-        viewController.view.frame = CGRect(x: 0, y: 0, width: self.first_View.frame.size.width, height: self.first_View.frame.size.height)
+         firstController.view.frame = CGRect(x: 0, y: 0, width: self.first_View.frame.size.width, height: self.first_View.frame.size.height)
 
         // Add Child View Controller
-        addChild(viewController)
-        viewController.view.translatesAutoresizingMaskIntoConstraints = true
+        addChild(firstController)
+         firstController.view.translatesAutoresizingMaskIntoConstraints = true
 
         // Add Child View as Subview
-         first_View.addSubview(viewController.view)
+         first_View.addSubview(firstController.view)
 
         // Notify Child View Controller
-        viewController.didMove(toParent: self)
+         firstController.didMove(toParent: self)
     }
 
-    //Add Tablview from other VIewcontroller
-    private lazy var SecondtObject: ThirsdCollectionViewController = {
-        // Instantiate View Controller
-          let storyboard = UIStoryboard(name: "Main", bundle: nil)
-          let viewController = storyboard.instantiateViewController(withIdentifier: "ThirsdCollectionViewController") as! ThirsdCollectionViewController
-        return viewController
-      }()
+    let secondController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirsdCollectionViewController") as! ThirsdCollectionViewController
+
     // Adding it as Subview:
-     private func add2(asChildViewController viewController: UIViewController){
+     private func add2(){
+
         // Configure Child View
-        viewController.view.frame = CGRect(x: 0, y: 0, width: self.second_view.frame.size.width, height: self.second_view.frame.size.height)
+         secondController.view.frame = CGRect(x: 0, y: 0, width: self.second_view.frame.size.width, height: self.second_view.frame.size.height)
 
         // Add Child View Controller
-        addChild(viewController)
-        viewController.view.translatesAutoresizingMaskIntoConstraints = true
+        addChild(secondController)
+         secondController.view.translatesAutoresizingMaskIntoConstraints = true
 
         // Add Child View as Subview
-         second_view.addSubview(viewController.view)
+         second_view.addSubview(secondController.view)
 
         // Notify Child View Controller
-        viewController.didMove(toParent: self)
+         secondController.didMove(toParent: self)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.add(asChildViewController: FirstObject)
-        self.add2(asChildViewController: SecondtObject)
+        self.add()
+        self.add2()
     }
 
 
