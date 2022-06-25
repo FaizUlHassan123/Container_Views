@@ -21,14 +21,14 @@ Add Other ViewControllers As subview in Container View
         // Add Child View as Subview
          second_view.addSubview(secondController.view)
 
-        // Notify Child View Controller
+        // Called after the view controller is added or removed from a container view controller.
          secondController.didMove(toParent: self)
     }
     
 #Removing Subview
 
     private func remove(){
-        // Notify Child View Controller
+        // Called just before the view controller is added or removed from a container view controller.
         firstController.willMove(toParent: nil)
 
         // Remove Child View From Superview
