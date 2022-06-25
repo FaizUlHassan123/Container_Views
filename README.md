@@ -24,7 +24,18 @@ Add Other ViewControllers As subview in Container View
         // Notify Child View Controller
          secondController.didMove(toParent: self)
     }
-      
+    
+#Removing Subview
+
+    private func remove(){
+        // Notify Child View Controller
+        firstController.willMove(toParent: nil)
+
+        // Remove Child View From Superview
+        firstController.view.removeFromSuperview()
+
+        self.view.layoutIfNeeded()
+    }
 
 # Output
 
