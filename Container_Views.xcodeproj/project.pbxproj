@@ -16,6 +16,8 @@
 		5E6DA13D28670E9F00DA622C /* Container_ViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DA13C28670E9F00DA622C /* Container_ViewsTests.swift */; };
 		5E6DA14728670E9F00DA622C /* Container_ViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DA14628670E9F00DA622C /* Container_ViewsUITests.swift */; };
 		5E6DA14928670E9F00DA622C /* Container_ViewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DA14828670E9F00DA622C /* Container_ViewsUITestsLaunchTests.swift */; };
+		5E6DA15628670F1F00DA622C /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DA15528670F1F00DA622C /* SecondTableViewController.swift */; };
+		5E6DA1582867112200DA622C /* ThirsdCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DA1572867112200DA622C /* ThirsdCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5E6DA14228670E9F00DA622C /* Container_ViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Container_ViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6DA14628670E9F00DA622C /* Container_ViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container_ViewsUITests.swift; sourceTree = "<group>"; };
 		5E6DA14828670E9F00DA622C /* Container_ViewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container_ViewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E6DA15528670F1F00DA622C /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		5E6DA1572867112200DA622C /* ThirsdCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirsdCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				5E6DA12E28670E9F00DA622C /* Assets.xcassets */,
 				5E6DA13028670E9F00DA622C /* LaunchScreen.storyboard */,
 				5E6DA13328670E9F00DA622C /* Info.plist */,
+				5E6DA15528670F1F00DA622C /* SecondTableViewController.swift */,
+				5E6DA1572867112200DA622C /* ThirsdCollectionViewController.swift */,
 			);
 			path = Container_Views;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6DA12A28670E9A00DA622C /* ViewController.swift in Sources */,
+				5E6DA15628670F1F00DA622C /* SecondTableViewController.swift in Sources */,
+				5E6DA1582867112200DA622C /* ThirsdCollectionViewController.swift in Sources */,
 				5E6DA12628670E9A00DA622C /* AppDelegate.swift in Sources */,
 				5E6DA12828670E9A00DA622C /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HF367CX3VA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Container_Views/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -449,7 +458,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.compress.sumreco.Container-Views";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mightymap.Thyne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,6 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HF367CX3VA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Container_Views/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,7 +486,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.compress.sumreco.Container-Views";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mightymap.Thyne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
