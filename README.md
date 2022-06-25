@@ -28,4 +28,4 @@ Add Other ViewControllers As subview in Container View
 
 # Output
 
-![simulator screen shot - iphone 8 plus - 2018-01-19 at 12 06 44](https://user-images.githubusercontent.com/26831784/35137808-3f986ff2-fd11-11e7-8c5c-b8f7f6fbebf5.png)
+
