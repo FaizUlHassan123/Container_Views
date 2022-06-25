@@ -28,5 +28,5 @@ Add Other ViewControllers As subview in Container View
 
 # Output
 
-<img src="Container_Views/ScreenShort/screen.jpg" width="40%">
-<img src="Container_Views/ScreenShort/screen2.jpg" width="40%">
+<img src="ScreenShort/screen.jpg" width="40%">
+<img src="ScreenShort/screen2.jpg" width="40%">
